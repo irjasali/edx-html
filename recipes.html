@@ -2,31 +2,262 @@
 <html lang="es">
 <head>
  <meta charset="utf-8">
- <title>My favorite recipes </title>
+ <title>Mis platillos favoritos</title>
+ <style>
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+div#container {
+  background-color: #00FFFF;
+  position: relative;
+  top: 10;
+}
+    h1{
+
+        background-color: navy;
+        color: #ffffff;
+        text-align: center; 
+        width: 100%;
+        height: 150px;
+        padding: 35px;
+        font-size: 44px;
+        
+    }
+    h2{
+
+        color: navy;
+        text-align: left; 
+        padding: 15px 10px;
+        font-size: 40px;        
+    }
+   
+
+    nav {
+        background-color: #5EC4CD;
+        text-align: center;
+        font-size: 35px;        
+        color:#147299;
+        width: 0 auto;
+          
+          border-style:dotted;
+          border-width: 1px;
+          
+          padding: 10px 5px;
+    }
+
+    a {
+            text-decoration: none;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            font-size: 24px; /* points (pt) are used in print, not screen.*/
+            text-transform: uppercase;
+            color:#ffffff;
+            text-align: left;           
+
+    }
+
+    a:link, a:visited {
+        color: #ffffff;
+        padding: 14px 25px;
+        text-align: center; 
+        text-decoration: none;
+        display: inline-block; 
+    }
+
+    a:active {
+        color:#147299;
+        background-color: 
+    }
+
+    a:hover {
+        color:#147299;
+        background-color:#ffffff; 
+    }
+
+    #r1 {
+        color:orange;
+        background-color:#147299;;
+    }
+
+    #mail {
+        color:orange;
+        background-color:#147299;;
+    }
+    #p1 {
+      font-family: "Times New Roman", Times, serif; 
+      font-size: 20px;
+      text-align: justify;
+      padding: 10px 45px;      
+    }
+
+    #pa{
+      background-color: #147299;
+      font-family: "Times New Roman", Times, serif; 
+      font-size: 20px;
+      text-align: justify;
+      padding: 5px 5px 10px 10px;
+      display: inline-block;
+      width: 170px;
+      border-radius: 10px;
+      margin: 5px 10px 10px 1129px;
+    }
+
+    #p2 {
+      /*background-color: #DEB887;*/
+    }
+summary {
+    text-align: left;
+    font-size: 15px;
+}
+
+#img1 {
+    padding: 20px 550px;      
+    display: inline-block;  
+}
+#img2 {
+    padding: 20px 5px;
+    margin: 40px 5px;
+    display: inline-block;
+    border: 1px solid;
+    width: 350px;
+    height: 550px;
+    
+}
+#ol1{
+    margin: 350px 10px 10px 10px;
+    padding: 20px 20px;
+}
+
+</style>
 
 
 </head>
     <body>
-        <header><h1>My Favorite Recipes</h1></header>
-        <nav>
+    <div id="container">
+        <header> <h1 id="arriba">Mis platillos favorito</h1></header>
+    </div>
+          <nav>
             <a href="#tacos">Tacos</a>
             <a href="#tortas">Tortas</a>
             <a href="#enchiladas">Enchiladas</a>
        </nav>
-        <h3>List of Ingredients:</h3>
-        <ul>
-            <li>Ingredient 1</li>
-            <li>Ingredient 2</li>
-            <li>Ingredient 3</li>
+       <section>    
+        <article> 
+        <h2 id="tacos">Tacos.</h2>  
+            <blockquote id="p1">    
+            Taco es un plato de origen mexicano que consiste en una tortilla (generalmente de maíz, aunque en el norte de México se emplean también las de harina de trigo).Los tacos suelen contener algún aliño dentro de la tortilla que puede ser desde una simple espolvoreada de sal, un taco con sal,1 hasta las preparaciones más complejas como los tacos al pastor o las flautas que son tacos fritos. Los tacos de esta clase suelen ir acompañados de alguna salsa. Asimismo, existen los tacos de salsa, es decir, tortillas untadas de alguna de las preparaciones picantes que se ofrecen para aderezar los alimentos. El taco, como cualquier otra manifestación de cultura culinaria de México, está directamente asociado a los ingredientes utilizados en cada región geográfica del país.<br>
+            <img id="img1" src="http://www.recetatacos.net/ImagenesTacos/ImagenesTop/Tacosdecarne.jpg">
+
+            <br>En la actualidad los tacos se han extendido mundialmente como un tipo de comida rápida. Sin embargo, fuera de México, los tacos que expenden las cadenas transnacionales de comida rápida, muchas de ellas con base en los Estados Unidos, corresponden a una variedad representativa de la gastronomía texana. Es cierto que estos tacos están inspirados en las costumbres culinarias de México, pero su preparación y su contenido es diferente; particularmente se distinguen por el uso de tortilla frita industrialmente, que produce una tostada en forma de U, que es inusual en México.  
+            </blockquote> 
+               
+        <h3 id="p1">Lista de Ingredientes:</h3>
+        <ul id="p1">
+            <li>Carne de ternera, medio kilo</li>
+            <li>Una cebolla mediana</li>
+            <li>Tortillas de maíz</li>
+            <li>Un poco de cilantro</li>
+            <li>Guacamole, casero o comprado</li>
+            <li>Aceite de oliva virgen</li>
+            <li>Sal</li>
+
         </ul>
 
-        <p>This is how you make recipe 1:</p>
+        <p id="p1">Pasos:</p>
 
-        <ol>
-            <li>First step</li>
-            <li>Second step</li>
-            <li>Third step</li>
+        <ol id="p1">
+            <li>Para hacer estos tacos de carne vamos a utilizar una buena carne magra de ternera (también conocida como res) de buena calidad, para lo que os recomendamos acudir a vuestra carnicería de confianza. La carne es aquella que contiene poca cantidad de grasa y tiene mucho contenido en fibra. Esta carne es buena para nuestra alimentación porque suelen ser una buena fuente de proteínas. Una vez la tengamos comprada, la limpiamos bien y la cortamos en filetes. La salpimentamos un poco y ponemos en una sartén con un chorrito de aceite de oliva virgen, y cuando esté bien caliente la pasamos por la sartén para hacerla bien por ambos lados, hasta que quede bien dorada. Una vez tengamos la carne hecha, la partimos en trozos pequeños, en forma de cuadritos.<br>
+            Por otro lado se pela la cebolla quitándole la capa exterior y el resto lo cortamos en trozos medianos en forma de daditos. Lavamos el cilantro y lo picamos bien. Después usamos una sartén con un chorrito de aceite de oliva para saltear ligeramente tanto la cebolla picada como el cilantro. Cuando la cebolla se poche un poco, sacamos de la sartén y mezclamos esta cebolla y el cilantro con la carne que habíamos preparado.<br>
+            Necesitamos salsa guacamole para esta receta, el cual puedes comprar en un supermercado, o hacerlo de forma casera, para lo que vas a necesitar un par de aguacates maduros, un limón, un poco de cilantro, una cebolla mediana, sal y un chile o salsa picante. Se preparara sacando la pulpa de los aguacates, a los que les añadimos el zumo de un limón para que no se vuelva oscura. Se le añade la cebolla muy picadita, el cilantro muy picado y un chile picado o un toque de salsa picante. Si quieres se le puede añadir un tomate pequeño bien picadito.<br>
+
+            Con todo lo anterior listo, procedemos a calentar las tortillas de maíz, para lo que podemos usar una plancha o sartén y calentarlas una a una por cada cara, o bien usar el microondas y calentarlas todas a la vez. Una vez tengamos las tortillas calientes, comenzamos a montar los tacos, echando en cada tortilla un poco de la carne mezclada con la cebolla y el cilantro, que calentaremos antes, acompañándola con un poco de guacamole. La tortilla se sirve doblada por la mitad y se acompaña de alguna salsa mexicana al gusto. Esperamos que os guste esta receta de tacos de carne. </li>
         </ol>
+            </article>
+            <p id="pa"><a id="r1" href=#arriba>Arriba</a></p>
+        </section>
+        <section>    
+            <article> 
+            <h2 id="tortas">Tortas</h2>  
+            <blockquote id="p1">    
+            Torta, en la gastronomía mexicana, se refiere a un tipo de sándwich que se elabora con un pan, como telera, bolillo o birote, el cual se parte por la mitad y se rellena de diferentes alimentos.1 Las tortas pueden servirse frías o calientes. Además del consumo casero, se comercializan en locales conocidos como torterías o en puestos callejeros.<br>
+
+            <img id="img1" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Tortamex.jpg/250px-Tortamex.jpg">
+
+            Suelen estar aderezadas con mayonesa, crema, tomate, aguacate, frijoles, mostaza y cualquier tipo de chile o combinación de ellos como el chile jalapeño, chipotle, y salsas o guacamole, etc. Entre las comerciales se conocen dos tipos las "simples" con un solo tipo de relleno y las "combinadas".
+
+            A las tortas se les conoce con dos variantes principales las caseras y las comerciales. A nivel casero las tortas se realizan normalmente con carnes frías, embutidos y guisos.
+
+            A nivel comercial por el contrario se limitan a unos pocos tipos de relleno, tales como milanesa, carne de res, pierna de cerdo adobada, jamón, lomo, pollo, queso Oaxaca, queso amarillo, salchicha, chorizo, mariscos, tocino, etc. pero que se suelen combinar produciendo una infinidad de variantes, al ser muchas las posibles variantes o combinaciones, en las torterías se ha optado por ponerles nombres característicos a ciertas combinaciones, los cuales más o menos se respectan, estos tienen normalmente que ver con algo relacionado con sus ingredientes por ejemplo la Toluqueña, es una torta a base de chorizo, que es un producto muy característico de la ciudad de Toluca, o la Suiza que está hecha exclusivamente de quesos y se relaciona con Suiza por la fama que tienen sus quesos, así podemos encontrar nombres tales como: Texana, Rusa, Pachuqueña, Argentina, Española. De todos los tipos de combinaciones destaca la Cubana, que consiste en la mezcla de todos los ingredientes que se tengan, por lo que suele ser la más grande y cara de todas.  
+            </blockquote> 
+               
+        <h3 id="p1">Lista de Ingredientes:</h3>
+        <ul id="p1">
+            <li>bolillo</li>
+            <li>rebanadas de tomate</li>
+            <li>rebanada de cebolla</li>
+            <li>rebanadas delgadas de aguacate</li>
+            <li>rebanada de queso panela</li>
+            <li>trozo de filete de res</li>
+        </ul>
+
+        <p id="p1">Pasos:</p>
+
+        <ol id="p1">
+            <li>Abra a la mitad el bolillo, qu�tele el migaj�n y unte las tapas con los frijoles refritos.
+            Ponga en una tapa de pan el queso panela, encima una capa de lechuga, el jam�n, la carne y, por �ltimo, m�s lechuga, tomate, cebolla y chiles jalape�os a su gusto.<br> </li>
+        </ol>
+            </article>
+            <p id="pa"><a id="r1" href=#arriba>Arriba</a></p>
+        </section>
+
+        <section>    
+            <article> 
+            <h2 id="enchiladas">Enchiladas</h2>  
+            <blockquote id="p1">    
+           La enchilada es un plato que en México se elabora con tortilla de maíz bañada en alguna salsa picante utilizando chile en su preparación. Dependiendo del estilo, la enchilada puede ir acompañada o rellena de carnes —pollo, pavo, res— o queso; además de ser acompañada de alguna guarnición adicional, que generalmente consiste en cebolla fresca picada o en rodajas, lechuga, crema de leche y queso.
+
+            En Guatemala las enchiladas son consideradas una comida tradicional y sus ingredientes son: picado de carne, curtido (remolacha, cebolla, perejil, ajo, tomillo, chile pimiento, zanahorias, ejote, arveja, repollo mediano, orégano, vinagre), salsa de tomate, carne de res o cerdo, lechuga del país, huevos duros, cebolla, queso duro<br>
+
+            <img id="img1" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Enchilada_Rice_Beans.jpg/280px-Enchilada_Rice_Beans.jpg">
+
+           
+            </blockquote> 
+               
+        <h3 id="p1">Lista de Ingredientes:</h3>
+        <ul id="p1">
+            <li>tortillas de maíz</li>
+            <li>chile habanero</li>
+            <li>queso menonita</li>
+            <li>queso cotija</li>
+            <li>chorizo Ibérico</li>
+            <li>cebolla morada picada finamente</li>
+        </ul>
+
+        <p id="p1">Pasos:</p>
+
+        <ol id="p1">
+            <li>Pasamos las tortillas por aceite y reservamos.
+                Mezclamos los quesos con el chorizo, rellenamos las tortillas pero reserva un poco para decorar.
+                Enrollamos las tortillas para formar las enchiladas y reservamos.
+                En una olla aparte hervimos los chiles, con la cebolla y el ajo.
+                Licuamos la mezcla anterior sólo con un poco del líquido de la cocción.
+                Colocamos las enchiladas en la sartén y los sofreímos por espacio de dos o tres minutos y retiramos.
+                Sofreímos en el mismo aceite el relleno que reservamos , y retiramos del fuego cuanto el chorizo cambie su color a un tono rojo de mayor intensidad.
+                Montamos el plato y servimos con el extra de relleno encima, seguido de la lechuga , la cebolla y la piña.La salsa de chile habanero se puede usar para bañarlas antes o después de servir.<br> </li>
+        </ol>
+            </article>
+            <p id="pa"><a id="r1" href=#arriba>Arriba</a></p>
+        </section>
+    <footer>
+        
+        <p>Please write me:<a id="mail" href="mailto:irjasali@hotmail.com"> irjasali@hotmail.com </a></p>
+
+    </footer>
 
     </body>
 </html>
+
